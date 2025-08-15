@@ -11,6 +11,7 @@ An optimized RAG pipeline notebook featuring:
 - **FAISS vector store** for high-performance similarity search
 - **Smart caching** for documents, embeddings, and queries
 - **Performance monitoring** with detailed metrics
+- **Comprehensive Financial Analysis** capabilities for annual reports
 
 ## Key Features
 
@@ -26,6 +27,13 @@ An optimized RAG pipeline notebook featuring:
 - Modular design
 - Easy API key configuration
 
+📊 **Financial Analysis:**
+- Complete balance sheet analysis with YoY comparisons
+- Cash flow statement analysis
+- Executive compensation extraction
+- Targeted search for financial data
+- Support for large annual reports (tested with 369-page documents)
+
 ## Setup Instructions
 
 1. Clone this repository
@@ -39,9 +47,14 @@ An optimized RAG pipeline notebook featuring:
 ## Usage Example
 
 ```python
-# After running the notebook setup cells
+# Basic RAG usage
 response = ask_question("What are the advantages of using RAG?")
 print(response)
+
+# Financial analysis examples
+balance_sheet_response = rag_chain_complete.invoke("Extract the complete balance sheet with YoY changes")
+cash_flow_response = rag_chain_complete.invoke("Analyze cash flow statement and working capital changes") 
+exec_comp_response = compensation_rag_chain.invoke("List top 10 executive compensation details")
 ```
 
 ## Requirements
