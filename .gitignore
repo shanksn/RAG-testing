@@ -1,0 +1,43 @@
+# API Keys and Environment Files
+.env
+*.env
+
+# Cache Files
+docs_cache.pkl
+*_cache.pkl
+
+# FAISS Vector Store Files
+faiss_vectorstore/
+*.faiss
+*.pkl
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
